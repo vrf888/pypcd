@@ -1,5 +1,5 @@
+from setuptools import setup, find_packages
 import os
-from distutils.core import setup
 
 # Get version and release info, which is all stored in pypcd/version.py
 ver_file = os.path.join('pypcd', 'version.py')
@@ -22,7 +22,6 @@ opts = dict(name=NAME,
             packages=PACKAGES,
             package_data=PACKAGE_DATA,
             install_requires=INSTALL_REQUIRES)
-
 
 if __name__ == '__main__':
     setup(**opts)
